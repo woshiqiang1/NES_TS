@@ -1647,7 +1647,7 @@ class PaletteTable {
   setEmphasis(emph: number) {
     if (emph !== this.currentEmph) {
       this.currentEmph = emph;
-      for (var i = 0; i < 64; i++) {
+      for (let i = 0; i < 64; i++) {
         this.curTable[i] = this.emphTable[emph][i];
       }
     }
