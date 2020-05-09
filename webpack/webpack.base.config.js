@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     entry: {
-      'app': './src/index.ts'
+      'app': './src/template/index.ts'
     },
     output: {
       filename: '[name].[chunkhash:8].js'
@@ -23,7 +23,7 @@ module.exports = {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: './src/tpl/index.html'
+        template: './src/template/index.html'
       })
     ],
     optimization: {
